@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Handlee&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;700;800&family=Rubik:wght@300;400;500&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1c2431;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+/*----------Nav----------*/
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    z-index: 20;
+}
+
+.nav .logo{
+    width: 150px;
+    height: 45px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav ul li{
+    cursor: pointer;
+}
+
+.nav ul li a{
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.nav ion-icon{
+    display: none;
+    font-size: 25px;
+}
+
+@media (max-width: 550px) {
+    .nav{
+        padding: 20px;
+    }
+
+    .nav .logo{
+        width: 100px;
+        height: 30px;
+    }
+
+    .nav ul{
+        gap: 15px;
+    }
+}
+
+/*----------Section1----------*/
+.section1{
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1 .img-container{
+    width: 700px;
+}
+
+
+.section1 .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.section1 .info{
+    width: 700px;
+    padding: 15px;
+    text-align: center;
+}
+
+.section1 .info h1{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.section1 .info p{
+    font-size: 15px;
+}
+
+.section1 .info button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: hsl(198, 60%, 50%);
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .section1 .img-container{
+        width: 100%;
+    }
+    .section1 .info{
+        width: 100%;
+    }
+}
+
+/*----------Section2----------*/
+.section2{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.section2 .content{
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 30px;
+    padding: 20px;
+}
+
+.section2 .content div img{
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.section2 .content div{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section2 .content div p{
+    font-size: 15px;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.section2 .content div h2{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.section2 .content div .img2{
+    width: 23%;
+}
+
+@media (max-width: 800px) {
+    .section2 .content{
+        width: 100%;
+    }
+}
+
+/*------------Section3-----------*/
+.section3{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.section3 .container{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+.section3 .container div{
+    width: 50%;
+}
+
+.section3 .container .img-container{
+    width: 50%;
+    overflow: hidden;
+}
+
+.section3 .container .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section3 .container .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section3 .container .info h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section3 .container .info p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 5px;
+}
+
+.section3 .container .info button{
+    align-self: baseline;
+    background: transparent;
+    border: none;
+    padding: 5px 0;
+    border-bottom: solid 1px hsl(176, 68%, 64%);
+    color: hsl(176, 68%, 64%);
+    display: flex;
+    align-items: center;
+}
+
+.section3 .container .info button img{
+    margin-left: 5px;
+}
+
+@media (max-width: 1000px) {
+    .section3 .container{
+        width: 100%;
+    }
+
+    .section3 .container .info{
+        padding: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .section3 .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section3 .container div{
+        width: 100%;
+    }
+
+    .section3 .container .img-container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .section3 .container .img-container{
+        width: 100%;
+    }
+}
+
+/*-----------Comments----------*/
+.section4{
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.section4 .content{
+    width: 1000px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.section4 .content .content-user{
+    width: 400px;
+    background-color: rgb(34, 45, 65);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.section4 .content .content-user p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.section4 .content .content-user .user{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+
+.section4 .content .content-user .user img{
+    width: 35px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.section4 .content .content-user .user div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section4 .content .content-user .user div h5{
+    font-size: 14px;
+}
+
+.section4 .content .content-user .user div span{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.9);
+} 
+
+@media (max-width: 1000px) {
+    .section4{
+        margin-bottom: 300px;
+    }
+    .section4 .content{
+        width: 100%;
+    }
+}
+
+/*---------Footer---------*/
+.footer{
+    width: 100%;
+    height: auto;
+    padding-top: 180px;
+    padding-bottom: 50px;
+    position: relative;
+    background-color: #0b1523;
+    display: flex;
+}
+
+.footer .form-container{
+    top: -30%;
+    right: 0;
+    left: 0;
+    width: 800px;
+    margin: auto;
+    position: absolute;
+    padding: 50px;
+    text-align: center;
+    background-color: hsl(217, 28%, 15%);
+    border-radius: 20px;
+    box-shadow: 0 0px 15px -5px black;
+}
+
+.footer .form-container h2{
+    font-size: 30px;
+}
+
+.footer .form-container p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 10px 0;
+}
+
+.footer .form-container form{
+    width: 100% ;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.footer .form-container form .input-text{
+    width: 70%;
+    font-size: 15px;
+    padding: 0 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.footer .form-container form button{
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: hsl(198, 60%, 50%);
+    color: #fff;
+    border: none;
+}
+
+.footer .content{
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 20px;
+}
+
+.footer .content .logo{
+    width: 200px;
+}
+
+.footer .content .content-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer .content .content-info div p, li{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+
+.footer .content .content-info .item1{
+    display: flex;
+    gap: 20px;
+    width: 400px;
+}
+
+.footer .content .content-info .item1 img{
+    width: 20px;
+    height: 20px;
+}
+
+.footer .content .content-info .item2{
+    width: 200px;
+}
+
+.footer .content .content-info .item2 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .content .content-info .item2 ul li img{
+    margin-right: 15px;
+}
+
+.footer .content .content-info .item3{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.footer .content .content-info .item3 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .content .content-info .item4{
+    width: 150px;
+}
+
+.footer .content .content-info .item4 ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .content .content-info .item4 ul li ion-icon{
+    border: solid 1px #fff;
+    font-size: 22px; 
+    padding: 7px;
+    border-radius: 100%;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 850px) {
+    .footer .form-container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer .form-container{
+        top: -35%;
+    }
+    .footer .form-container form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer .form-container form .input-text{
+        width: 100%;
+        padding: 7px 15px;
+    }
+}
