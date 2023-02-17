@@ -41,8 +41,8 @@ body{
 }
 
 .nav ul li a{
-    color: rgb(255, 255, 255, 0.7);
     text-decoration: none;
+    color: rgb(255, 255, 255, 0.7);
 }
 
 .nav ion-icon{
