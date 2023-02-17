@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Landing-Page-React/static/css/main.8af7e6fd.css",
+    "main.css": "/Landing-Page-React/static/css/main.3d6b0e6e.css",
     "main.js": "/Landing-Page-React/static/js/main.7c588ff8.js",
     "static/media/illustration-intro.png": "/Landing-Page-React/static/media/illustration-intro.c20d85255009f195b4a6.png",
     "static/media/illustration-stay-productive.png": "/Landing-Page-React/static/media/illustration-stay-productive.5d7a50ea74b08000cd67.png",
@@ -14,11 +14,11 @@
     "static/media/icon-phone.svg": "/Landing-Page-React/static/media/icon-phone.43c05d1a510cada2b8f305cbb2278ae4.svg",
     "static/media/icon-location.svg": "/Landing-Page-React/static/media/icon-location.a681f02d94e561498fa0781c3538edac.svg",
     "static/media/icon-email.svg": "/Landing-Page-React/static/media/icon-email.201ea9e2e87effbe720d0f8b77fba022.svg",
-    "main.8af7e6fd.css.map": "/Landing-Page-React/static/css/main.8af7e6fd.css.map",
+    "main.3d6b0e6e.css.map": "/Landing-Page-React/static/css/main.3d6b0e6e.css.map",
     "main.7c588ff8.js.map": "/Landing-Page-React/static/js/main.7c588ff8.js.map"
   },
   "entrypoints": [
-    "static/css/main.8af7e6fd.css",
+    "static/css/main.3d6b0e6e.css",
     "static/js/main.7c588ff8.js"
   ]
 }
